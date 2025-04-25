@@ -41,15 +41,26 @@ btnNext.addEventListener('click',function(){
     else if(currentQuiz.choices[selectedOption.value-1] === currentQuiz.answer && check){
         score++
         check = false
-    }
-    count++
-    countPage++
-    if(count<=10){
-        mainQuiz()
-    }
+        count++
+        countPage++
+            if(count<=10){
+                mainQuiz()
+            }
+            else{
+                endQuiz()
+            }
+        }
     else{
-        endQuiz()
-    }
+        count++
+        countPage++
+            if(count<=10){
+                mainQuiz()
+            }
+            else{
+                endQuiz()
+            }
+        }
+    
 })
 
 function mainQuiz(){
@@ -74,7 +85,7 @@ function mainQuiz(){
 function endQuiz(){
     quizPage.style.display='none'
     endPage.style.display='flex'
-    scoreFinal.innerText = score
+    scoreFinal.innerText = `${score} คะแนน`
     if(score>maxScore){
         maxScore = score
         localStorage.setItem('maxscoreSave',maxScore)
