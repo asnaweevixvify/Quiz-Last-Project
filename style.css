@@ -105,11 +105,12 @@ input{
 @media(max-width:450px){
     h3{
         right: 50px;
-        top: 100px;
+        top: 40px;
     }
     .mainpage,.quizpage,.endpage{
-        width: 350px;
+        width: 320px;
         height: 600px;
+        margin-top: 40px;
     }
     .mainpagetext{
         font-size: 40px;
