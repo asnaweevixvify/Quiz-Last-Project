@@ -11,5 +11,36 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
+    <div class="mainpage" id="mainpage">
+        <h1 class="mainpagetext animate__animated animate__bounceIn">เกมทายปัญหา</h1>
+        <button class="btnmain animate__animated animate__fadeInUp" id="btnmain">เริ่มเกม</button>
+    </div>
+    <div class="quizpage" id="quizpage">
+        <h3 id="countpage">1/10</h3>
+        <h1 id="quiz" class="animate__animated animate__bounceIn"></h1>
+        <div class="allchoice animate__animated animate__jackInTheBox">
+            <div class="choicecontain">
+                <input type="radio" name="option" id="choiceradio" value="1">
+                <h2 id="choice1">77</h2>
+            </div>
+            <div class="choicecontain">
+                <input type="radio" name="option" id="choiceradio" value="2">
+                <h2 id="choice2">78</h2>
+            </div>
+            <div class="choicecontain">
+                <input type="radio" name="option" id="choiceradio" value="3">
+                <h2 id="choice3">79</h2>
+            </div>
+            <div class="choicecontain">
+                <input type="radio" name="option" id="choiceradio" value="4">
+                <h2 id="choice4">80</h2>
+            </div>
+        </div>
+        <button class="nextbtn" id="nextbtn">ต่อไป</button>
+    </div>
+    <div class="endpage" id="endpage">
+        <h1 class="score animate__animated animate__bounceIn" id="scorefinal">คะแนนของคุณเท่ากับ 0 คะแนน</h1>
+        <h1 class="maxscore animate__animated animate__fadeInUp">คะแนนมากที่สุดของคุณเท่ากับ 0 คะแนน</h1>
+    </div>
     <script src="/app.js"></script>
 </body>

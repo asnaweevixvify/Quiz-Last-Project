@@ -2,7 +2,100 @@
     padding: 0;
     margin: 0;
 }
-h1{
+h1,h2,h3{
     font-family: 'Kanit';
     font-weight: 400;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    position: absolute;
+    top: 120px;
+    right: 640px;
+}
+body{
+    background-color: cadetblue;
+}
+.mainpage,.quizpage,.endpage{
+    width: 700px;
+    height: 700px;
+    background-color: white;
+    border: 0px solid transparent;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right:auto ;
+    margin-top: 100px;
+    justify-content: center;
+}
+.quizpage{
+    display: none;
+    align-items: flex-start;
+}
+.endpage{
+    display: none;
+}
+.mainpagetext{
+    font-size: 70px;
+    margin-top: -145px;
+}
+.btnmain{
+    font-family: 'Kanit';
+    font-weight: 400;
+    font-size: 35px;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: blueviolet;
+    color: white;
+    border: 0px solid transparent;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#quiz{
+    font-size: 40px;
+    margin-top: -50px;
+    width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.allchoice{
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.choicecontain{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+input{
+    width: 20px;
+}
+.nextbtn{
+    font-family: 'Kanit';
+    font-weight: 400;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: blueviolet;
+    color: white;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.score{
+    font-size: 50px;
+    margin-top: -80px;
+}
+.maxscore{
+    font-size: 25px;
+    margin-top: 40px;
 }
