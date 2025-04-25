@@ -126,4 +126,7 @@ input{
         font-size: 20px;
         width: 250px;
     }
+    .allchoice{
+        margin-left: 25px;
+    }
 }
