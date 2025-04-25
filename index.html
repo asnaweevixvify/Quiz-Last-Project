@@ -8,7 +8,8 @@
     <script src="https://kit.fontawesome.com/9bc1020bc5.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.all.min.js"></script>
 </head>
 <body>
     <div class="mainpage" id="mainpage">
@@ -20,19 +21,19 @@
         <h1 id="quiz" class="animate__animated animate__bounceIn"></h1>
         <div class="allchoice animate__animated animate__jackInTheBox">
             <div class="choicecontain">
-                <input type="radio" name="option" id="choiceradio" value="1">
+                <input type="radio" name="option" id="radio1" value="1">
                 <h2 id="choice1">77</h2>
             </div>
             <div class="choicecontain">
-                <input type="radio" name="option" id="choiceradio" value="2">
+                <input type="radio" name="option" id="radio2" value="2">
                 <h2 id="choice2">78</h2>
             </div>
             <div class="choicecontain">
-                <input type="radio" name="option" id="choiceradio" value="3">
+                <input type="radio" name="option" id="radio3" value="3">
                 <h2 id="choice3">79</h2>
             </div>
             <div class="choicecontain">
-                <input type="radio" name="option" id="choiceradio" value="4">
+                <input type="radio" name="option" id="radio4" value="4">
                 <h2 id="choice4">80</h2>
             </div>
         </div>
@@ -40,7 +41,7 @@
     </div>
     <div class="endpage" id="endpage">
         <h1 class="score animate__animated animate__bounceIn" id="scorefinal">คะแนนของคุณเท่ากับ 0 คะแนน</h1>
-        <h1 class="maxscore animate__animated animate__fadeInUp">คะแนนมากที่สุดของคุณเท่ากับ 0 คะแนน</h1>
+        <h1 class="maxscore animate__animated animate__fadeInUp" id="maxscore">คะแนนมากที่สุดของคุณเท่ากับ 0 คะแนน</h1>
     </div>
     <script src="/app.js"></script>
 </body>
