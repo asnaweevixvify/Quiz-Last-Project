@@ -102,3 +102,12 @@ input{
 .alert{
     font-size: 25px;
 }
+@media(max-width:450px){
+    .mainpage,.quizpage,.endpage{
+        margin-top: 300px;
+    }
+    h3{
+        right: -250px;
+        top: 320px;
+    }
+}
